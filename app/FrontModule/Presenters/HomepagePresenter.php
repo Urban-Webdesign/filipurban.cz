@@ -7,7 +7,12 @@ class HomepagePresenter extends BasePresenter
 
 	public function renderDefault(): void
 	{
-		// Render
+
+	}
+
+	public function renderService($slug): void
+	{
+
 	}
 
 }
