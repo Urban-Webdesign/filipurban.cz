@@ -1,0 +1,301 @@
+// dark theme
+body.dark-theme {
+	background-color: #333;
+	color: #eee;
+
+	h1, h2, h3, h4 {
+		color: #fff;
+	}
+
+	nav {
+		background-color: #222;
+
+		.n-links {
+			background-color: #222;
+
+			a {
+				&:hover {
+					color: #a92d19;
+				}
+			}
+		}
+	}
+
+	header {
+		background-color: #444;
+
+		.typewrite {
+			color: #ddd;
+		}
+
+		.wrap {
+			border-right: 0.08em solid #bbb;
+		}
+
+		svg {
+			filter: invert(90%);
+		}
+	}
+
+	a {
+		color: #eee;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn {
+		color: #fff;
+		background-color: #666;
+
+		&:hover {
+			background-color: #444;
+		}
+	}
+
+	.portfolio {
+		.p-footer {
+			background-color: #222;
+
+			.btn {
+				background-color: #111;
+
+				&:hover {
+					background-color: #000;
+				}
+			}
+		}
+	}
+
+	.services {
+		.s-grid {
+			.s-g-item {
+				background-color: $light-red;
+				color: #fff;
+			}
+		}
+	}
+
+	.contact {
+		background-color: #444;
+		color: #000;
+
+		.c-links {
+			a {
+				color: #ccc;
+
+				&:hover {
+					color: #eee;
+				}
+			}
+		}
+	}
+
+	svg {
+		fill: #eee;
+	}
+}
+
+// light theme
+body.light-theme {
+	background-color: #fff;
+	color: #222;
+
+	h1, h2, h3, h4 {
+		color: #000;
+	}
+
+	nav {
+		background-color: #fff;
+
+		.n-links {
+			background-color: #fff;
+
+			a {
+				&:hover {
+					color: $blue;
+				}
+			}
+		}
+	}
+
+	header {
+		background-color: #f0f0f0;
+
+		.typewrite {
+			color: #444;
+		}
+
+		.wrap {
+			border-right: 0.08em solid #666;
+		}
+
+		svg {
+			filter: unset;
+		}
+	}
+
+	a {
+		color: #222;
+
+		&:hover {
+			color: #000;
+		}
+	}
+
+	.btn {
+		color: #000;
+		background-color: #f3f3f3;
+
+		&:hover {
+			background-color: #fff;
+		}
+	}
+
+	.portfolio {
+		.p-footer {
+			background-color: #f1f1f1;
+
+			.btn {
+				background-color: #fefefe;
+
+				&:hover {
+					background-color: #fff;
+				}
+			}
+		}
+	}
+
+	.services {
+		.s-grid {
+			.s-g-item {
+				background-color: $light-blue;
+				color: #000;
+			}
+		}
+	}
+
+	.contact {
+		background-color: #333;
+		color: #fff;
+
+		h2 {
+			color: #fff;
+		}
+
+		.c-links {
+			a {
+				color: #ddd;
+
+				&:hover {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	svg {
+		fill: #000;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	h1, h2, h3, h4 {
+		color: #fff;
+	}
+
+	body {
+		background-color: #333;
+		color: #eee;
+	}
+
+	nav {
+		background-color: #222;
+
+		.n-links {
+			background-color: #222;
+
+			a {
+				&:hover {
+					color: $light-red;
+				}
+			}
+		}
+	}
+
+	header {
+		background-color: #444;
+
+		.typewrite {
+			color: #ddd;
+		}
+
+		.wrap {
+			border-right: 0.08em solid #bbb;
+		}
+
+		svg {
+			filter: invert(90%);
+		}
+	}
+
+	a {
+		color: #eee;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	.btn {
+		color: #fff;
+		background-color: #666;
+
+		&:hover {
+			background-color: #444;
+		}
+	}
+
+	.portfolio {
+		.p-footer {
+			background-color: #222;
+
+			.btn {
+				background-color: #111;
+
+				&:hover {
+					background-color: #000;
+				}
+			}
+		}
+	}
+
+	.services {
+		.s-grid {
+			.s-g-item {
+				background-color: $red;
+				color: #fff;
+			}
+		}
+	}
+
+	.contact {
+		background-color: #444;
+		color: #000;
+
+		.c-links {
+			a {
+				color: #ccc;
+
+				&:hover {
+					color: #eee;
+				}
+			}
+		}
+	}
+
+	svg {
+		fill: #eee;
+	}
+}
