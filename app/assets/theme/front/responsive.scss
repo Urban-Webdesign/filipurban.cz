@@ -1,0 +1,221 @@
+@media only screen and (max-width: 1400px) {
+
+	header {
+		margin-top: 100px;
+		height: 500px;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+	}
+
+	h3 {
+		font-size: 1.6rem;
+	}
+
+	h5 {
+		font-size: 1.2rem;
+	}
+
+	.portfolio {
+		.p-grid {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+	}
+
+	.m-footer {
+		align-items: flex-start;
+
+		.f-logo {
+			max-width: 350px;
+			svg {
+				width: 140px;
+			}
+		}
+
+		.f-info {
+			grid-template-columns: auto auto auto;
+
+		}
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.m-footer {
+		flex-direction: column-reverse;
+		gap: 4rem;
+	}
+
+	.services {
+		.s-grid {
+			.s-g-item {
+				img {
+					max-width: 120px;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+
+	.toggle-label {
+		display: none;
+	}
+
+	header {
+		height: 350px;
+		justify-content: flex-start;
+	}
+
+	h1 {
+		font-size: 2.7rem;
+	}
+
+	h2 {
+		font-size: 2.2rem;
+	}
+
+	h3 {
+		font-size: 1.7rem;
+	}
+
+	h3 {
+		font-size: 1.4rem;
+	}
+
+	h5 {
+		font-size: 1.1rem;
+		margin-bottom: .5rem;
+	}
+
+	nav {
+
+		.n-logo {
+			svg {
+				max-height: 50px;
+			}
+		}
+
+		.n-links {
+			a {
+				margin: 0 .2rem;
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	.portfolio {
+		.p-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	.services {
+		.s-grid {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.contact {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+	h1 {
+		font-size: 2.3rem;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	nav {
+		flex-direction: column;
+
+		.n-logo {
+			padding: 0.5rem 0;
+			svg {
+				max-height: 40px;
+			}
+		}
+
+		.n-links {
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 100vw;
+
+			a {
+				font-size: 1rem;
+				padding: .7rem .8rem;
+				margin: 0;
+			}
+		}
+	}
+
+	header {
+		margin-top: 100px;
+
+		svg {
+			height: 100%;
+		}
+	}
+
+	section {
+		padding: 2rem 5vw;
+	}
+
+	.portfolio {
+		.p-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.p-footer {
+			margin-top: 2rem;
+			padding: 1.5rem;
+
+			.btn {
+				text-align: center;
+			}
+		}
+	}
+
+	.m-footer {
+		padding: 4rem 5vw;
+
+		.f-info {
+			grid-template-columns: 1fr;
+		}
+
+		.f-logo {
+			svg {
+				width: 120px;
+			}
+		}
+	}
+}
+
+
+@media only screen and (max-width: 400px) {
+	.services {
+		.s-grid {
+			.s-g-item {
+				img {
+					display: none;
+				}
+			}
+		}
+	}
+}
