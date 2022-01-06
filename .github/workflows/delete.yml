@@ -16,4 +16,4 @@ jobs:
       - name: Remove File
         uses: JesseTG/rm@v1.0.2
         with:
-          path: /www/filipurban.cz/node_modules
+          path: /fifaurban.savana-hosting.cz/filipurban.cz/node_modules
