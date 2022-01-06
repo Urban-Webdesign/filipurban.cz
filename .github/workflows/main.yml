@@ -27,7 +27,7 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 14
-          
+
       - name: 🔗 NPM install
         if: steps.npm-cache.outputs.cache-hit != 'true'
         run: npm install --no-optional
@@ -48,3 +48,8 @@ jobs:
         uses: JesseTG/rm@v1.0.2
         with:
           path: /www/filipurban.cz/temp/cache
+
+      - name: 🗑️ Remove Node Modules
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /www/filipurban.cz/node_modules

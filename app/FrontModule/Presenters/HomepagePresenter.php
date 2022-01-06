@@ -12,7 +12,7 @@ class HomepagePresenter extends BasePresenter
 
 	public function renderService($slug): void
 	{
-
+		$this->template->slug = $slug;
 	}
 
 }
