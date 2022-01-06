@@ -23,9 +23,14 @@ jobs:
         if: steps.composer-cache.outputs.cache-hit != 'true'
         run: composer install --no-interaction --no-progress
 
+      - name: Install Node.js, NPM and Yarn
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
       - name: 🔗 NPM install
         if: steps.npm-cache.outputs.cache-hit != 'true'
-        run: npm install
+        run: npm install --no-optional
 
       - name: 🔨 Build project
         run: npm run build
@@ -43,3 +48,8 @@ jobs:
         uses: JesseTG/rm@v1.0.2
         with:
           path: /www/filipurban.cz/temp/cache
+
+      - name: 🗑️ Remove Node Modules
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /www/filipurban.cz/node_modules
