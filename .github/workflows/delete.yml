@@ -16,4 +16,9 @@ jobs:
       - name: Remove File
         uses: JesseTG/rm@v1.0.2
         with:
-          path: /www/filipurban.cz/node_modules/
+          path: /www/filipurban.cz/node_modules/*
+          
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /www/filipurban.cz/.env
