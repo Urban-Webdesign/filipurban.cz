@@ -1,0 +1,19 @@
+on:
+  push:
+    branches:
+      - master
+      - dev
+  pull_request:
+    branches:
+      - master
+      - dev
+name: 🚀 Deploy website
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove File
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /www/filipurban.cz/node_modules
