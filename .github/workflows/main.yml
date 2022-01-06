@@ -35,15 +35,6 @@ jobs:
       - name: 🔨 Build project
         run: npm run build
 
-      - name: 📂 Deploy to server
-        uses: easingthemes/ssh-deploy@v2.1.5
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.HOSTING_SSH_PRIVATE_KEY }}
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
-          TARGET: /www/filipurban.cz/
-
       - name: 🗑️ Remove Cache
         uses: JesseTG/rm@v1.0.2
         with:
@@ -53,3 +44,12 @@ jobs:
         uses: JesseTG/rm@v1.0.2
         with:
           path: /www/filipurban.cz/node_modules
+
+      - name: 📂 Deploy to server
+        uses: easingthemes/ssh-deploy@v2.1.5
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.HOSTING_SSH_PRIVATE_KEY }}
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
+          TARGET: /www/filipurban.cz/
