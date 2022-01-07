@@ -35,15 +35,8 @@ jobs:
       - name: 🔨 Build project
         run: npm run build
 
-      - name: 🗑️ Remove Cache
-        uses: JesseTG/rm@v1.0.2
-        with:
-          path: /www/filipurban.cz/temp/cache
-
       - name: 🗑️ Remove Node Modules
-        uses: JesseTG/rm@v1.0.2
-        with:
-          path: /www/filipurban.cz/node_modules
+        run: rm -rf node_modules
 
       - name: 📂 Deploy to server
         uses: easingthemes/ssh-deploy@v2.1.5
@@ -53,3 +46,8 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           REMOTE_PORT: ${{ secrets.REMOTE_PORT }}
           TARGET: /www/filipurban.cz/
+
+      - name: 🗑️ Remove Cache
+        uses: JesseTG/rm@v1.0.2
+        with:
+          path: /www/filipurban.cz/temp/cache
