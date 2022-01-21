@@ -84,11 +84,13 @@ nav {
 }
 
 header {
+	margin-top: 100px;
 	padding: 0 5vw;
 	width: 90vw;
-	height: 700px;
+	height: 400px;
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	overflow: hidden;
 	position: relative;
@@ -121,7 +123,7 @@ section {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4.3rem;
 }
 
 h2 {
